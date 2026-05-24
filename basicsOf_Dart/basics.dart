@@ -38,6 +38,11 @@ void main()
   b="RamKrishna";
   print(b);
 
+  //Type inference
+  var marks = 100; //Dart infers this as int and locks it
+  print(marks);
+  //marks = "Ram"; Compile error
+
 
 
   //loop demonstration using a dart
