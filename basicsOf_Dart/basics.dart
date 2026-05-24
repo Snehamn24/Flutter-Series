@@ -2,7 +2,7 @@ void main()
 {
   print("Hello World!!!");
 
-  //variables and datatypes
+  //variables and datatypes (statiscally typed)
 
   int age = 30;
   print(age);
@@ -25,6 +25,19 @@ void main()
   //there is no float datatype in dart instead use dart
   double a = 3.366;
   print(a);
+
+
+  //dynamically typed
+  dynamic first = "Ram";
+  print(first);
+  first=18;
+  print(first); 
+
+  dynamic b = 90;
+  print(b);
+  b="RamKrishna";
+  print(b);
+
 
 
   //loop demonstration using a dart
