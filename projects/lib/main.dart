@@ -5,25 +5,21 @@ import 'package:flutter/material.dart';
 //app structure , theme, navigation ,  material design UI
 //Here we are saying run a app using the MaterialApp as the root widget
 //Material App is a wrapper for the rest of the widgets
+
+//1 . AppBar is how the app looks at the top
+//2 . Scaffold is a wrapper for the other widgets
 void main() => runApp(MaterialApp(
 
   //define the various properties
-  debugShowCheckedModeBanner: false,
-  home:Scaffold(
-    appBar:AppBar(
-      title:Text('My First Flutter App'),
-      backgroundColor: Colors.blue,
-    ),
-    body:Center(
-      child:Text(
-        'Heyyy Ninjass!!',
-        style:TextStyle(
-          color:Colors.blue,
-          fontSize: 30,
-          fontWeight: FontWeight.bold,
-        ),
-      ),
-    ),
-  ),
+ home:Scaffold(
+   appBar : AppBar(
+     title : Text("Hey ninjas"),
+     centerTitle : true,
+   ),
+   body:Center(
+   child:Text("This is flutter app "),),
+   floatingActionButton: FloatingActionButton(onPressed:(){print("Clicked");},child : Text('click'),)
+ ),
+  
 
 ));
